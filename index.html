@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Harmonia Sonora</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+</div>
+<body>
+    <div id="homeScreen">
+        <header class="hero">
+            <p class="tag">PROJETO  HARMONIA SONORA</p>
+            <h1>Harmonia Sonora</h1>
+            <p class="subtitle">
+                Uma experiência interativa para explorar diferentes
+                sons, estilos e universos musicais.
+            </p>
+
+            <button id="explanationButton" class="main-button">
+                Como funciona?
+            </button>
+        </header>
+        <section id="explanationScreen" class="explanation">
+
+            <div class="explanation-content">
+
+                <p class="tag">SOBRE O PROJETO</p>
+                <h2>Como funciona?</h2>
+                <p>
+                    O <strong>Harmonia Sonora</strong> é uma plataforma
+                    interativa criada para apresentar diferentes artistas
+                    através de um painel de sons.
+                </p>
+                <p>
+                    Escolha um dos três artistas disponíveis e explore
+                    suas músicas. Ao clicar nos botões, o som selecionado
+                    será reproduzido e a imagem relacionada ao artista
+                    será apresentada.
+                </p>
+                <p>
+                    O projeto utiliza <strong>HTML, CSS e JavaScript</strong>
+                    para criar uma experiência visual e interativa.
+                </p>
+
+                <button id="artistsButton" class="main-button">
+                    Escolher um artista
+                </button>
+            </div>
+        </section>
+        <main id="artistsScreen">
+            <section class="artists-section">
+                <p class="tag">ESCOLHA SEU UNIVERSO</p>
+                <h2>Explore os artistas</h2>
+                <p class="section-description">
+                    Clique em um dos artistas para acessar seu painel sonoro.
+                </p>
+                <div class="artist-grid">
+                    <button
+                        class="artist-card"
+                        data-artist="sophie"
+                    >
+                        <div class="artist-image">
+                            <img
+                                src="assets/imagens/sophie.jpg"
+                                alt="Imagem da artista SOPHIE"
+                            >
+                        </div>
+                        <div class="artist-info">
+                            <span class="artist-number">
+                                01
+                            </span>
+                            <h3>SOPHIE</h3>
+                            <p>
+                                Experimental • Eletrônico • Futurista
+                            </p>
+                        </div>
+                    </button>
+                    <button
+                        class="artist-card"
+                        data-artist="bjork"
+                    >
+                        <div class="artist-image">
+                            <img
+                                src="assets/imagens/bjork.jpg"
+                                alt="Imagem da artista Björk"
+                            >
+                        </div>
+                        <div class="artist-info">
+                            <span class="artist-number">
+                                02
+                            </span>
+                            <h3>BJÖRK</h3>
+                            <p>
+                                Alternativo • Experimental • Artístico
+                            </p>
+                        </div>
+                    </button>
+                    <button
+                        class="artist-card"
+                        data-artist="charli"
+                    >
+                        <div class="artist-image">
+                            <img
+                                src="assets/imagens/brat.jpg"
+                                alt="Imagem da artista Charli XCX"
+                            >
+
+                        </div>
+                        <div class="artist-info">
+                            <span class="artist-number">
+                                03
+                            </span>
+                            <h3>CHARLI XCX</h3>
+                            <p>
+                                Pop • Eletrônico • Hyperpop
+                            </p>
+                        </div>
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <section id="soundboardScreen" class="soundboard-screen">
+        <header class="soundboard-header">
+            <button id="backButton" class="back-button">
+                ← Voltar
+            </button>
+            <div>
+                <p class="tag">PAINEL SONORO</p>
+                <h2 id="boardTitle">
+                    Harmonia Sonora
+                </h2>
+            </div>
+            <span id="status">
+                 pronto para começar
+            </span>
+        </header>
+
+        <main class="soundboard">
+            <div class="featured-area">
+                <img
+                    id="featuredImage"
+                    src="assets/imagens/sophie.jpg"
+                    alt="Imagem do artista selecionado"
+                >
+            </div>
+            <div class="track-area">
+                <p id="trackArtist">
+                    ARTISTA
+                </p>
+                <h1 id="trackTitle">
+                    Escolha um som
+                </h1>
+                <p id="trackHint">
+                    Clique em um dos botões abaixo para reproduzir.
+                </p>
+                <div
+                    id="soundButtons"
+                    class="sound-buttons"
+                >
+                </div>
+                <audio
+                    id="audioPlayer"
+                    controls
+                    preload="none"
+                >
+                 <h2>Björk</h2>
+
+    <button onclick="tocarMusica('human')">Human Behaviour</button>
+    <button onclick="tocarMusica('army')">Army of Me</button>
+    <button onclick="tocarMusica('joga')">Jóga</button>
+
+    <h2>Charli XCX</h2>
+
+    <button onclick="tocarMusica('party')">Party 4 U</button>
+    <button onclick="tocarMusica('vondutch')">Von Dutch</button>
+    <button onclick="tocarMusica('360')">360</button>
+
+    <h2>SOPHIE</h2>
+    <button onclick="tocarMusica('faceshopping')">Faceshopping</button>
+    <button onclick="tocarMusica('immaterial')">Immaterial</button>
+    <button onclick="tocarMusica('ponyboy')">Ponyboy</button>
+    <audio id="player"></audio>
+    <script src="script.js"></script>
+                </audio>
+            </div>
+        </main>
+    </section>
+    <script src="scrpit.js"></script>
+</body>
+</html>
